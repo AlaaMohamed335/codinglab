@@ -1,0 +1,112 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+} 
+ body {
+   font-family: sans-serif;
+    background: white ;
+ }
+ nav{
+   background-color: rgb(223, 223, 223);
+   height: 80px;
+   width: 100%;
+ }
+ 
+ label.Codinglab {
+   color: black;
+   font-size: 35px;
+   line-height: 80px;
+   padding: 50px;
+   font-weight: bold;
+ }
+nav ul{
+   float: right;
+   margin-right: 20px;
+  }
+  nav ul li{
+   display: inline-block;
+   line-height: 80px;
+  }
+  nav ul li a{
+   padding: 7px 13px;
+   font-size: 17px;
+   border-radius: 4px;
+   margin: 5px;
+   background-color: #e6e1e16e;
+   box-shadow:0px 1px 7px #9E9E9E;
+   transition: all 0.5s ease;
+   color:rgb(146, 146, 146) ;
+  }
+nav ul li a:hover{
+   color: rgb(19, 19, 139);
+   transform: scale(0.96);
+   transition: .5s;
+}
+   .checkbtn{
+   font-size: 25px;
+   color: black;
+   float: right;
+   line-height: 80px;
+   margin-right: 25px;
+   cursor: pointer;
+   display: none;
+ }
+ #check{
+   display: none;
+ }
+ @media (max-width: 952){
+   label.Codinglab{
+      font-size: 30px;
+      padding-left: 50px;
+   }
+   nav ul li a{
+      font-size: 16px;
+   }
+ }
+ @media (max-width: 858px){
+.checkbtn{
+display: block;
+}
+ul{
+   position: fixed;
+   width: 100%;
+   text-align: center;
+   height: 100vh;
+   background: white ;
+   transition: all 0.5s ease;
+   top: 90px;
+   left: -100%;
+   transform: scale(0.96);
+   transition: .5s
+}
+nav ul li {
+   display: block;
+   margin: 50px 0;
+   line-height: 30px;
+
+}
+nav ul li a{
+   font-size: 20px;
+}
+nav ul li a:hover{
+   background:none
+   color rgb(19, 19, 139);
+}
+#check:checked ~ ul{
+   left: 0;
+}
+ }
+   h2{
+   display: flex;
+   height: 500px;
+   justify-content: center;
+   align-items: center;
+      }
+      @media(max-width:858px){
+         h2{
+            text-align: center;
+         }
+      }
